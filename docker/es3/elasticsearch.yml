@@ -1,0 +1,16 @@
+http.host: 0.0.0.0
+http.port: 9200
+
+cluster.name: es-cluster
+node.name: es-node-3
+
+node.data: true
+node.master: true
+
+transport.host: 172.18.0.103
+network.host: 172.18.0.103
+
+index.number_of_replicas: 2
+
+discovery.zen.minimum_master_nodes: 2
+discovery.zen.ping.unicast.hosts: ["172.18.0.101", "172.18.0.102","172.18.0.103"]
